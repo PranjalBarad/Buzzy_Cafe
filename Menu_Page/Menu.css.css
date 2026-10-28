@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f5ede3;
+    color: #4E342E;
+}
+.menu-headerW {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 18px 40px;
+    box-shadow: 0 2px 8px rgba(78,52,46,0.08);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+.logoW {
+    font-weight: 700;
+    color: #4E342E;
+    letter-spacing: 2px;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+.cartW {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.cartW img {
+    width: 32px;
+    height: 32px;
+}
+#cart-countW {
+    background: #4E342E;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 1rem;
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    min-width: 24px;
+    text-align: center;
+}
+.menu-iconsW {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    background: #e7dbc9;
+    padding: 32px 0 24px 0;
+    margin-bottom: 24px;
+}
+.iconW {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #4E342E;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.iconW:hover {
+    transform: scale(1.1);
+}
+.iconW img {
+    width: 48px;
+    height: 48px;
+}
+.menu-mainW {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 0 48px 0;
+}
+.menu-sectionW {
+    margin-bottom: 2em;
+}
+.section-titleW {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #4E342E;
+    margin: 32px 0 18px 16px;
+    letter-spacing: 1px;
+}
+.dessert-subtitleW {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #4E342E;
+    margin: 24px 0 12px 24px;
+    letter-spacing: 1px;
+}
+.cards-containerW {
+    display: flex;
+    overflow-x: auto;
+    gap: 2em;
+    padding-bottom: 1em;
+    scroll-behavior: smooth;
+    position: relative;
+}
+.cardsW {
+    display: flex;
+    gap: 32px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 12px;
+    width: 100%;
+}
+.arrowW {
+    background: #4E342E;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(78,52,46,0.10);
+    z-index: 2;
+}
+.arrowW:hover {
+    background: #6d4c1b;
+}
+.cardW {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(78,52,46,0.10);
+    width: 240px;
+    min-width: 240px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s;
+    border: 1.5px solid #e7dbc9;
+    position: relative;
+    min-width: 260px;
+    max-width: 260px;
+    flex: 0 0 auto;
+}
+.cardW:hover {
+    box-shadow: 0 8px 32px rgba(78,52,46,0.18);
+    border-color: #4E342E33;
+}
+.card-imgW {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+.card-contentW {
+    padding: 18px 16px 12px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-titleW {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #4E342E;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+.card-descW {
+    font-size: 0.95rem;
+    color: #6d4c1b;
+    margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+.card-bottomW {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-priceW {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #4E342E;
+}
+.add-cartW {
+    background: #4E342E;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 18px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.add-cartW:hover {
+    background: #6d4c1b;
+}
+.scroll-to-top {
+    display: flex;
+    justify-content: flex-start;   /* Align left */
+    align-items: center;
+    margin: 0 16em 4em 2em;        /* Add left margin for spacing */
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px rgba(78,46,19,0.10);
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+.scroll-to-top:hover {
+    box-shadow: 0 4px 24px rgba(78,46,19,0.18);
+    background: #f7f5f2;
+}
+.scroll-to-top img {
+    width: 100px;
+    height: 100px;
+    transform: rotate(180deg); /* Rotates the arrow to point up */
+    transition: transform 0.2s;
+}
+@media (max-width: 900px) {
+    .cardsW {
+        gap: 18px;
+    }
+    .cardW {
+        width: 46vw;
+        min-width: 180px;
+    }
+}
+@media (max-width: 600px) {
+    .menu-headerW {
+        padding: 12px 10px;
+        font-size: 1rem;
+    }
+    .menu-iconsW {
+        gap: 18px;
+        padding: 18px 0 12px 0;
+    }
+    .cardsW {
+        gap: 12px;
+        justify-content: center;
+    }
+    .cardW {
+        width: 90vw;
+        min-width: 140px;
+    }
+}
+
+/* Hide default scrollbar, show custom if you want */
+.cards-containerW::-webkit-scrollbar {
+    height: 8px;
+}
+.cards-containerW::-webkit-scrollbar-thumb {
+    background: #a9744f;
+    border-radius: 4px;
+}
+.cards-containerW::-webkit-scrollbar-track {
+    background: #f7f5f2;
+}

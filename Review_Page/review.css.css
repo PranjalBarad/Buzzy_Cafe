@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.review-bg {
+    min-height: 97vh;
+    width: 98vw;
+    background: url('../Image/review.jpg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.review-content {
+    background: rgba(255,255,255,0.94);
+    border-radius: 32px;
+    box-shadow: 0 4px 32px rgba(44, 27, 14, 0.14);
+    padding: 64px 48px;
+    max-width: 900px;
+    width: 95%;
+    text-align: center;
+}
+
+.review-content h2 {
+    font-family: 'Pacifico', cursive;
+    color: #6e4b2a;
+    font-size: 2.6rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.review-anim-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 40px;
+    min-height: 140px;
+    position: relative;
+}
+
+.review-boxR {
+    background: #3e2723;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(44, 27, 14, 0.20);
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    min-width: 260px;
+    max-width: 300px;
+    font-size: 1.15rem;
+    font-family: 'Poppins', Arial, sans-serif;
+    transition: transform 0.9s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.9s;
+    opacity: 0.95;
+}
+
+.review-boxR img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #a67c52;
+    object-fit: cover;
+}
+
+.anim-left {
+    transform: translateX(-70px) translateY(24px) scale(0.95);
+    z-index: 1;
+}
+.anim-center {
+    transform: scale(1.08);
+    box-shadow: 0 8px 32px rgba(44, 27, 14, 0.24);
+    z-index: 2;
+}
+.anim-right {
+    transform: translateX(70px) translateY(-24px) scale(0.95);
+    z-index: 1;
+}
+
+/* Animation classes */
+.fade-out {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.8);
+}
+.fade-in {
+    opacity: 1;
+    transform: translateY(0) scale(1.08);
+}
+
+.buttonsR {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.btnR {
+    background: #a67c52;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 36px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: 'Poppins', Arial, sans-serif;
+    transition: background 0.2s;
+    box-shadow: 0 2px 10px rgba(44, 27, 14, 0.14);
+}
+
+.btnR:hover {
+    background: #e6c7a6;
+    color: #3e2723;
+}

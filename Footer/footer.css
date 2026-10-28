@@ -1,0 +1,61 @@
+/* General Footer Styling */
+.footer {
+    background-color: #3e2723;  /* dark brown */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-box {
+    min-width: 192px;
+    margin-right: 40px;  /* space between all sections */
+    margin-bottom: 20px;
+}
+
+.footer-box h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffcc80; /* light coffee tone */
+}
+
+.footer-box p {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.footer-box i {
+    margin-right: 8px;
+    color: #ffcc80;
+}
+
+/* Special spacing for the logo */
+.logo-box {
+   
+    text-align: center;
+}
+
+.logo-box img {
+    max-width: 195px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #fff;
+    font-size: 14px;
+    color: #ffcc80;
+    margin-top: 20px;
+}

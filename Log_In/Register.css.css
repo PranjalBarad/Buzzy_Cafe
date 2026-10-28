@@ -1,0 +1,147 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+.login-bg {
+    background: url('../../Buzzy_Cafe/Image/log_In_bg.jpg') center center/cover no-repeat;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 0; left: 0;
+}
+.login-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;      /* Vertically center */
+    justify-content: center;  /* Horizontally center */
+    z-index: 1;
+}
+.login-box-flex {
+    display: flex;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(44, 29, 19, 0.18);
+    overflow: hidden;
+    max-width: 850px;
+    width: 95vw;
+    height: 560px;         /* Shorter height */
+    min-height: unset;     /* Remove min-height */
+    align-items: stretch;  /* Both sides equal height */
+}
+.login-box {
+    flex: 1 1 340px;
+    padding: 1.2em 1.5em 1.2em 1.5em; /* Less vertical padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    justify-content: center; /* Center content vertically */
+    height: 100%;
+}
+.login-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.7em;
+    box-shadow: 0 2px 8px rgba(44,29,19,0.10);
+}
+h2 {
+    margin: 0 0 0.7em 0;
+    font-weight: 700;
+    color: #2d1e13;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 0.7em 1em;
+    margin-bottom: 0.7em;
+    border: 1px solid #d2a679;
+    border-radius: 8px;
+    font-size: 1em;
+    background: #f9f6f2;
+    outline: none;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: inherit;
+}
+.input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #f9f6f2 inset !important;
+    box-shadow: 0 0 0 1000px #f9f6f2 inset !important;
+    -webkit-text-fill-color: #2d1e13 !important;
+    color: #2d1e13 !important;
+    border: 1px solid #d2a679 !important;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="email"]:invalid {
+    border: 1px solid #d2a679 !important;
+    background: #f9f6f2 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.login-btn {
+    background: linear-gradient(90deg, #a9744f 0%, #d2a679 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 0.7em;
+    transition: background 0.2s;
+}
+.login-btn:hover {
+    background: linear-gradient(90deg, #d2a679 0%, #a9744f 100%);
+}
+.register-link {
+    font-size: 0.95em;
+    color: #2d1e13;
+    margin-top: 0.3em;
+}
+.register-link a {
+    color: #a9744f;
+    text-decoration: underline;
+}
+.login-side-img {
+    flex: 1 1 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f5f2;
+    height: 100%;
+}
+.login-side-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-width: 220px;
+    min-height: 100%;
+    border-radius: 0;
+}
+@media (max-width: 700px) {
+    .login-box-flex {
+        flex-direction: column;
+        max-width: 95vw;
+        height: auto;
+    }
+    .login-side-img {
+        display: none;
+    }
+}

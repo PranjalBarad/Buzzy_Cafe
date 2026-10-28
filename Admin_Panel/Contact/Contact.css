@@ -1,0 +1,48 @@
+.main-content {
+    margin-left: 260px;
+    padding: 40px 30px;
+    background: #fff;
+    min-height: 100vh;
+    color: #3e2723;
+}
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(62,39,35,0.07);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contact-table th, .contact-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.contact-table th {
+    background: #3e2723;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.contact-table td {
+    vertical-align: middle;
+}
+.action-btns {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.readBtn, .removeBtn {
+    background: #795548;
+    color: #fff;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.readBtn:hover { background: #388e3c; }
+.removeBtn:hover { background: #b71c1c; }
